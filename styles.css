@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
+@font-face {
+    font-family: 'LouBag';
+    src: url('fonts/LouBag-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
-    --laranja-claro: #FF862A;
+    --vermelho: #b30000;
+    --cinza-escuro: #1a1a1a;
+    --cinza-claro: #2e2e2e;
 }
 
 body {
     font-size: 1rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cinza-escuro);
+    color: #f5f5f5;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: var(--cinza-escuro);
 }
 
 
@@ -21,13 +33,17 @@ section {
 
 
 .nav-link {
-    color: #CB6D43;
+    color: #f5f5f5;
     font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--vermelho);
 }
 
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('img/4965007.jpg');
+   /* background-image: url('img/logodef.png'); /
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
@@ -37,6 +53,19 @@ section {
     padding: 40px;
     margin: 0 auto;
 }
+
+.inicio-fundo .logo { 
+    font-family: 'LouBag', sans-serif;
+    font-size: 7rem;
+    color: #fffafa;
+    text-shadow: 3px 3px 5px #b30000;
+    z-index: 2;
+    margin-top: 0.5rem;       /* distância do título principal */
+    align-self: flex-end;     /* empurra para a direita */
+    margin-right: 10%;        /* ajuste horizontal para deixar mais à direita */
+    
+}
+
 
 /* posicionamento para a imagem à direita */
 .img-inicio {
@@ -57,7 +86,7 @@ section {
 
 
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--vermelho);
     border-radius: 30px;
     border: none;
     width: 14em;
@@ -69,22 +98,22 @@ section {
 }
 
 .display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+    text-shadow: -5px 5px var(--vermelho);
 }
 
 
-#tropicalia {
+#banda {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
+    background-color: var(--cinza-escuro); 
+    background: url('img/Blacksmoke.jpg') top right no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
 
-#tropicalia .container {
+#deftones .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,29 +127,28 @@ h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: var(--laranja-claro);
+    color: var(--vermelho);
 }
 
 #galeria {
-    background-color: #FAF4F4;
+    background-color: #121212;
 
 }
 
 .fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-color: var(--cinza-claro);
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
+    background-color: #121212;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
 
 }
 
 .formulario {
-    background-color: #ffffff;
+    background-color: #1e1e1e;
     padding: 2rem;
     /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
@@ -128,15 +156,18 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Sombra suave para destacar o formulário */
     font-weight: bold;
+    color: #f5f5f5;
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color: var(--vermelho);
     border: none;
     font-weight: bold;
 }
 
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
-    background-color: #F1EDEF;
+    background-color: #2e2e2e;
+    color: #f5f5f5;
+    border: none;
 }
