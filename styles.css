@@ -58,13 +58,14 @@ section {
     font-family: 'LouBag', sans-serif;
     font-size: 7rem;
     color: #fffafa;
-    text-shadow: 3px 3px 5px #b30000;
+    text-shadow: 3px 3px 5px #fc0303;
     z-index: 2;
-    margin-top: 0.5rem;       /* distância do título principal */
+    margin-top: 0rem;       /* distância do título principal */
     align-self: flex-end;     /* empurra para a direita */
-    margin-right: 10%;        /* ajuste horizontal para deixar mais à direita */
+    margin-right: 3%;        /* ajuste horizontal para deixar mais à direita */
     
 }
+
 
 
 /* posicionamento para a imagem à direita */
