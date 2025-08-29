@@ -43,7 +43,7 @@ section {
 
 .inicio-fundo {
     /* aula 3 */
-   /* background-image: url('img/logodef.png'); /
+    background-image: url('img/640px-Deftones_At_the_SPIN_at_Stubb\'s_Party\,_SXSW\,_Austin\,_Texas_2016-9595_\(33941920736\).jpg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
@@ -54,16 +54,19 @@ section {
     margin: 0 auto;
 }
 
-.inicio-fundo .logo { 
+.inicio-fundo .logo {
     font-family: 'LouBag', sans-serif;
     font-size: 7rem;
     color: #fffafa;
     text-shadow: 3px 3px 5px #fc0303;
     z-index: 2;
-    margin-top: 0rem;       /* distância do título principal */
-    align-self: flex-end;     /* empurra para a direita */
-    margin-right: 3%;        /* ajuste horizontal para deixar mais à direita */
-    
+    margin-top: 0rem;
+    /* distância do título principal */
+    align-self: flex-end;
+    /* empurra para a direita */
+    margin-right: 3%;
+    /* ajuste horizontal para deixar mais à direita */
+
 }
 
 
@@ -108,8 +111,8 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background-color: var(--cinza-escuro); 
-    background: url('img/Blacksmoke.jpg') top right no-repeat;
+    background-color: var(--cinza-escuro);
+    background: url('img/640px-Deftones_At_the_SPIN_at_Stubb\'s_Party\,_SXSW\,_Austin\,_Texas_2016-9595_\(33941920736\).jpg') top right no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -126,9 +129,21 @@ section {
 
 h2 {
     font-family: 'Lemon', serif;
-    font-size: 2.5em;
+    font-size: 3em;
     font-style: normal;
     color: var(--vermelho);
+}
+
+.p-2 {
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-5 {
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
 }
 
 #galeria {
@@ -142,7 +157,7 @@ h2 {
 }
 
 #contato {
-    background-color: #121212;
+        background-color: #121212;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
 
